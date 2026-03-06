@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>PrimeTrade Task Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="main">
+
+<h1>PrimeTrade Task Manager</h1>
+
+<div class="card">
+
+<h2>Register</h2>
+<input id="regName" placeholder="Full Name">
+<input id="regEmail" placeholder="Email">
+<input id="regPassword" type="password" placeholder="Password">
+<button onclick="register()">Register</button>
+
+</div>
+
+<div class="card">
+
+<h2>Login</h2>
+<input id="loginEmail" placeholder="Email">
+<input id="loginPassword" type="password" placeholder="Password">
+<button onclick="login()">Login</button>
+
+</div>
+
+<div class="card">
+
+<h2>Create Task</h2>
+<input id="taskTitle" placeholder="Task title">
+<input id="taskDesc" placeholder="Task description">
+<button onclick="createTask()">Add Task</button>
+
+</div>
+
+<div class="card">
+
+<h2>Your Tasks</h2>
+<button onclick="getTasks()">Load Tasks</button>
+
+<ul id="taskList"></ul>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
